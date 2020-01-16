@@ -1,0 +1,82 @@
+@import '../../../styles/cursor';
+@import '../styles';
+
+@keyframes textBounce {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.08, 1.05);
+  }
+  100% {
+    transform: scale(1.02, 1.01);
+  }
+}
+
+.container {
+  overflow: hidden;
+}
+
+.text {
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity #{$animationDuration}ms ease, visibility #{$animationDuration}ms ease,
+    transform #{$animationDuration}ms ease;
+  transform: translateX(100%);
+
+  > g {
+    @extend %cursor-pointer;
+
+    &:hover {
+      > path:nth-child(2) {
+        fill: url(#container-gradient);
+      }
+      > mask > g {
+        animation: textBounce 100ms 0s 1 ease-out forwards;
+        transform-origin: center;
+      }
+    }
+
+    > path {
+      $colors: #9ea1ae, red, black;
+      @for $i from 1 through 3 {
+        &:nth-child(#{$i}) {
+          fill: nth($colors, $i);
+        }
+      }
+    }
+
+    > mask > g > path {
+      $letterHoles: 2, 5, 7, 16;
+      @each $size in $letterHoles {
+        &:nth-child(#{$size}) {
+          fill: black;
+        }
+      }
+    }
+  }
+}
+
+.enter {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(100%);
+}
+.entering,
+.entered {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+.exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+.exiting,
+.exited {
+  opacity: 0;
+  transform: translateX(100%);
+}

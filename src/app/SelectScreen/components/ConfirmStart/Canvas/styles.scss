@@ -1,0 +1,13 @@
+$canvasHeightOffset: 0.1;
+
+.canvas {
+  display: block;
+  position: absolute;
+  top: percentage(-$canvasHeightOffset);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: percentage(1 + $canvasHeightOffset * 2);
+  pointer-events: none;
+}

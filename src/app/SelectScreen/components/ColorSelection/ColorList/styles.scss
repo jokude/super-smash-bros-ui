@@ -1,0 +1,15 @@
+@import '../../../styles/border';
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+
+  .icon {
+    border: 4px solid transparent;
+
+    &.highlighted {
+      @extend %animate;
+    }
+  }
+}

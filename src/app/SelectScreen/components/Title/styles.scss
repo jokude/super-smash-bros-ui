@@ -1,0 +1,31 @@
+.title {
+  color: white;
+  font-family: FOT-RodinHimawariPro-UB;
+  font-size: 30px;
+  line-height: 1;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.titleTabContainer {
+  margin-left: 200px;
+  height: 30px;
+  width: 350px;
+  position: relative;
+  z-index: 1;
+}
+
+.titleTab {
+  background: black;
+  height: 100%;
+  transform: perspective(100px) rotateX(8deg);
+  transform-origin: bottom;
+}

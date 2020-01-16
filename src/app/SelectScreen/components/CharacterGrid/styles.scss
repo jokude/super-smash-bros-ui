@@ -1,0 +1,24 @@
+@import '../../styles/cursor';
+
+$totalRows: 6;
+$totalColumns: 13;
+
+.grid {
+  height: calc(60vh - 30px);
+  padding: 24px 24px 8px;
+  display: grid;
+  grid-template-rows: repeat($totalRows, minmax(60px, 90px));
+  grid-template-columns: repeat($totalColumns, minmax(55px, 150px));
+  grid-column-start: 1;
+  grid-column-end: 14;
+  @extend %cursor-coin;
+
+  &.disabled {
+    @extend %cursor-pointer;
+    pointer-events: none;
+  }
+}
+
+.grid > :nth-child(13n + 1):nth-last-child(-n + 13) {
+  grid-column-start: 2;
+}

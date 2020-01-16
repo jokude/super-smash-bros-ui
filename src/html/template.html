@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% if(htmlWebpackPlugin.files.chunks.webfont) { %>
+    <script src="<%= htmlWebpackPlugin.files.chunks.webfont.entry %>"></script>
+    <% } %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @font-face {
+        font-family: FOT-RodinHimawariPro-UB;
+        src: url('<%= webpackConfig.output.publicPath %>assets/fonts/FOT-RodinHimawariPro-UB.otf') format('opentype');
+      }
+
+      html,
+      body,
+      #app {
+        margin: 0;
+        height: 100%;
+        width: 100%;
+      }
+      #app {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+      }
+      .wf-loading {
+        opacity: 0;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Super Smash Bros Selection Screen" />
+    <title>Super Smash Bros Selection Screen</title>
+    <% if(webpackConfig.output.publicPath) { %>
+    <link rel="icon" href="<%= webpackConfig.output.publicPath %>assets/images/favicon.ico" />
+    <% } %>
+  </head>
+  <body>
+    <div id="app"></div>
+    <% if(htmlWebpackPlugin.files.chunks.index) { %>
+    <script src="<%= htmlWebpackPlugin.files.chunks.index.entry %>"></script>
+    <% } %>
+  </body>
+</html>

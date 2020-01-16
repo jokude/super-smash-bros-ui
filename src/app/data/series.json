@@ -1,0 +1,148 @@
+{
+  "series": [
+    {
+      "id": "super-smash-bros",
+      "name": "Super Smash Bros."
+    },
+    {
+      "id": "mario",
+      "name": "Mario"
+    },
+    {
+      "id": "donkey-kong",
+      "name": "Donkey Kong"
+    },
+    {
+      "id": "the-legend-of-zelda",
+      "name": "The Legend of Zelda"
+    },
+    {
+      "id": "metroid",
+      "name": "Metroid"
+    },
+    {
+      "id": "yoshi",
+      "name": "Yoshi"
+    },
+    {
+      "id": "kirby",
+      "name": "Kirby"
+    },
+    {
+      "id": "star-fox",
+      "name": "Star Fox"
+    },
+    {
+      "id": "pokemon",
+      "name": "Pokémon"
+    },
+    {
+      "id": "f-zero",
+      "name": "F-Zero"
+    },
+    {
+      "id": "earthbound",
+      "name": "Earthbound"
+    },
+    {
+      "id": "fire-emblem",
+      "name": "Fire Emblem"
+    },
+    {
+      "id": "game-and-watch",
+      "name": "Game & Watch"
+    },
+    {
+      "id": "kid-icarus",
+      "name": "Kid Icarus"
+    },
+    {
+      "id": "wario",
+      "name": "Wario"
+    },
+    {
+      "id": "pikmin",
+      "name": "Pikmin"
+    },
+    {
+      "id": "animal-crossing",
+      "name": "Animal Crossing"
+    },
+    {
+      "id": "wii-fit",
+      "name": "Wii Fit"
+    },
+    {
+      "id": "punch-out",
+      "name": "Punch-Out!!"
+    },
+    {
+      "id": "xenoblade-chronicles",
+      "name": "Xenoblade Chronicles"
+    },
+    {
+      "id": "splatoon",
+      "name": "Splatoon"
+    },
+    {
+      "id": "metal-gear",
+      "name": "Metal Gear"
+    },
+    {
+      "id": "sonic",
+      "name": "Sonic"
+    },
+    {
+      "id": "mega-man",
+      "name": "Mega Man"
+    },
+    {
+      "id": "pac-man",
+      "name": "PAC-MAN"
+    },
+    {
+      "id": "street-fighter",
+      "name": "Street Fighter"
+    },
+    {
+      "id": "final-fantasy-vii",
+      "name": "Final Fantasy VII"
+    },
+    {
+      "id": "bayonetta",
+      "name": "Bayonetta"
+    },
+    {
+      "id": "castlevania",
+      "name": "Castlevania"
+    },
+    {
+      "id": "duck-hunt",
+      "name": "Duck Hunt"
+    },
+    {
+      "id": "ice-climbers",
+      "name": "Ice Climbers"
+    },
+    {
+      "id": "rob",
+      "name": "R.O.B."
+    },
+    {
+      "id": "banjo-kazooie",
+      "name": "Banjo Kazooie"
+    },
+    {
+      "id": "dragon-quest",
+      "name": "Dragon Quest"
+    },
+    {
+      "id": "fatal-fury",
+      "name": "Fatal Fury"
+    },
+    {
+      "id": "persona",
+      "name": "Persona"
+    }
+  ]
+}

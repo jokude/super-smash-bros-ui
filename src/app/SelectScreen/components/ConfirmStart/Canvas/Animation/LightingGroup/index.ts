@@ -1,0 +1,1 @@
+export { LightingGroup } from './LightingGroup';

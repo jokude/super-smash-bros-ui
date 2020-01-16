@@ -1,0 +1,18 @@
+$dark-border-color: #b50d30;
+$light-border-color: #fbbbd5;
+
+@keyframes borderHighlight {
+  0% {
+    border-color: $dark-border-color;
+  }
+  50% {
+    border-color: $light-border-color;
+  }
+  100% {
+    border-color: $dark-border-color;
+  }
+}
+
+%animate {
+  animation: borderHighlight 0.8s infinite linear;
+}

@@ -1,0 +1,26 @@
+.selectedContainer {
+  margin: 8px 0;
+  position: relative;
+  height: calc(40vh - 30px);
+  overflow: hidden;
+}
+
+.childrenContainer {
+  height: 100%;
+  padding: 8px 140px 0;
+
+  .childrenItem {
+    position: relative;
+    height: 100%;
+    width: calc((40vh - 30px) * 1.31);
+    z-index: 11;
+
+    .childrenItemAbsolute {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}

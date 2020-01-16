@@ -1,0 +1,30 @@
+@import '../styles';
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  background: black;
+  transition: opacity #{$animationDuration}ms ease;
+  opacity: 0;
+  visibility: hidden;
+}
+.enter {
+  opacity: 0;
+  visibility: hidden;
+}
+.entering,
+.entered {
+  opacity: 0.6;
+  visibility: visible;
+}
+.exit {
+  opacity: 0.6;
+}
+.exiting,
+.exited {
+  opacity: 0;
+}

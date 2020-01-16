@@ -1,0 +1,16 @@
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+.portrait {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(-2px 10px 0px rgba(0, 0, 0, 0.5));
+
+  &.selected {
+    filter: drop-shadow(-2px 10px 0px rgba(0, 0, 0, 1));
+  }
+}

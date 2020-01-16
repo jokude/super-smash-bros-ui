@@ -1,0 +1,30 @@
+$slideDuration: 100;
+
+.slide {
+  transition: transform #{$slideDuration}ms ease, opacity #{$slideDuration * 4}ms ease;
+  transform: translateX(0);
+  transform-origin: top;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  &.entering {
+    opacity: 0;
+    transform: translateX(200%);
+  }
+  &.entered {
+    opacity: 1;
+  }
+  &.exiting,
+  &.exited {
+    opacity: 0;
+    transform: translateX(-200%);
+  }
+}
+
+:export {
+  slideDuration: $slideDuration;
+}

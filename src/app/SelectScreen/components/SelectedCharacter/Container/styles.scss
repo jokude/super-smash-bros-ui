@@ -1,0 +1,55 @@
+@import '../../../styles/cursor';
+
+@keyframes containerBounce {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.container {
+  width: auto;
+  height: 100%;
+  position: relative;
+
+  &.selected {
+    @extend %cursor-pointer;
+
+    animation: containerBounce 200ms 0s 1 ease-out forwards;
+
+    .background {
+      opacity: 1;
+    }
+  }
+
+  .background {
+    height: 100%;
+    width: auto;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    path:nth-child(1) {
+      fill: #161620;
+    }
+    path:nth-child(2) {
+      fill: #b8bede;
+    }
+    path:nth-child(3) {
+      fill: #c2276b;
+    }
+    path:nth-child(4) {
+      fill: #d15a7a;
+    }
+    path:nth-child(5) {
+      fill: #d38592;
+    }
+  }
+}

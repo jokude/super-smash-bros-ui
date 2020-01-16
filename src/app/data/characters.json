@@ -1,0 +1,402 @@
+{
+  "characters": [
+    {
+      "id": "mario",
+      "name": "Mario",
+      "series": "mario"
+    },
+    {
+      "id": "donkey-kong",
+      "name": "Donkey Kong",
+      "series": "donkey-kong"
+    },
+    {
+      "id": "link",
+      "name": "Link",
+      "series": "the-legend-of-zelda"
+    },
+    {
+      "id": "samus",
+      "name": "Samus",
+      "series": "metroid"
+    },
+    {
+      "id": "dark-samus",
+      "name": "Dark Samus",
+      "series": "metroid"
+    },
+    {
+      "id": "yoshi",
+      "name": "Yoshi",
+      "series": "yoshi"
+    },
+    {
+      "id": "kirby",
+      "name": "Kirby",
+      "series": "kirby"
+    },
+    {
+      "id": "fox",
+      "name": "Fox",
+      "series": "star-fox"
+    },
+    {
+      "id": "pikachu",
+      "name": "Pikachu",
+      "series": "pokemon"
+    },
+    {
+      "id": "luigi",
+      "name": "Luigi",
+      "series": "mario"
+    },
+    {
+      "id": "ness",
+      "name": "Ness",
+      "series": "earthbound"
+    },
+    {
+      "id": "captain-falcon",
+      "name": "Captain Falcon",
+      "series": "f-zero"
+    },
+    {
+      "id": "jigglypuff",
+      "name": "Jigglypuff",
+      "series": "pokemon"
+    },
+    {
+      "id": "peach",
+      "name": "Peach",
+      "series": "mario"
+    },
+    {
+      "id": "daisy",
+      "name": "Daisy",
+      "series": "mario"
+    },
+    {
+      "id": "bowser",
+      "name": "Bowser",
+      "series": "mario"
+    },
+    {
+      "id": "ice-climbers",
+      "name": "Ice Climbers",
+      "series": "ice-climbers"
+    },
+    {
+      "id": "sheik",
+      "name": "Sheik",
+      "series": "the-legend-of-zelda"
+    },
+    {
+      "id": "zelda",
+      "name": "Zelda",
+      "series": "the-legend-of-zelda"
+    },
+    {
+      "id": "dr-mario",
+      "name": "Dr Mario",
+      "series": "mario"
+    },
+    {
+      "id": "pichu",
+      "name": "Pichu",
+      "series": "pokemon"
+    },
+    {
+      "id": "falco",
+      "name": "Falco",
+      "series": "star-fox"
+    },
+    {
+      "id": "marth",
+      "name": "Marth",
+      "series": "fire-emblem"
+    },
+    {
+      "id": "lucina",
+      "name": "Lucina",
+      "series": "fire-emblem"
+    },
+    {
+      "id": "young-link",
+      "name": "Young Link",
+      "series": "the-legend-of-zelda"
+    },
+    {
+      "id": "ganondorf",
+      "name": "Ganondorf",
+      "series": "the-legend-of-zelda"
+    },
+    {
+      "id": "mewtwo",
+      "name": "Mewtwo",
+      "series": "pokemon"
+    },
+    {
+      "id": "roy",
+      "name": "Roy",
+      "series": "fire-emblem"
+    },
+    {
+      "id": "chrom",
+      "name": "Chrom",
+      "series": "fire-emblem"
+    },
+    {
+      "id": "mr-game-and-watch",
+      "name": "Mr. Game & Watch",
+      "series": "game-and-watch"
+    },
+    {
+      "id": "meta-knight",
+      "name": "Meta Knight",
+      "series": "kirby"
+    },
+    {
+      "id": "pit",
+      "name": "Pit",
+      "series": "kid-icarus"
+    },
+    {
+      "id": "dark-pit",
+      "name": "Dark Pit",
+      "series": "kid-icarus"
+    },
+    {
+      "id": "zero-suit-samus",
+      "name": "Zero Suit Samus",
+      "series": "metroid"
+    },
+    {
+      "id": "wario",
+      "name": "Wario",
+      "series": "wario"
+    },
+    {
+      "id": "snake",
+      "name": "Snake",
+      "series": "metal-gear"
+    },
+    {
+      "id": "ike",
+      "name": "Ike",
+      "series": "fire-emblem"
+    },
+    {
+      "id": "pokemon-trainer",
+      "name": "Pokemon Trainer",
+      "series": "pokemon",
+      "subcharacters": [
+        {
+          "id": "pokemon-trainer-charizard",
+          "name": "Charizard"
+        },
+        {
+          "id": "pokemon-trainer-ivysaur",
+          "name": "Ivysaur"
+        },
+        {
+          "id": "pokemon-trainer-squirtle",
+          "name": "Squirtle"
+        }
+      ]
+    },
+    {
+      "id": "diddy-kong",
+      "name": "Diddy Kong",
+      "series": "donkey-kong"
+    },
+    {
+      "id": "lucas",
+      "name": "Lucas",
+      "series": "earthbound"
+    },
+    {
+      "id": "sonic",
+      "name": "Sonic",
+      "series": "sonic"
+    },
+    {
+      "id": "king-dedede",
+      "name": "King Dedede",
+      "series": "kirby"
+    },
+    {
+      "id": "olimar",
+      "name": ["Olimar", "Olimar", "Olimar", "Olimar", "Alph", "Alph", "Alph", "Alph"],
+      "series": "pikmin"
+    },
+    {
+      "id": "lucario",
+      "name": "Lucario",
+      "series": "pokemon"
+    },
+    {
+      "id": "rob",
+      "name": "R.O.B.",
+      "series": "rob"
+    },
+    {
+      "id": "toon-link",
+      "name": "Toon Link",
+      "series": "the-legend-of-zelda"
+    },
+    {
+      "id": "wolf",
+      "name": "Wolf",
+      "series": "star-fox"
+    },
+    {
+      "id": "villager",
+      "name": "Villager",
+      "series": "animal-crossing"
+    },
+    {
+      "id": "mega-man",
+      "name": "Mega Man",
+      "series": "mega-man"
+    },
+    {
+      "id": "wii-fit-trainer",
+      "name": "Wii Fit Trainer",
+      "series": "wii-fit"
+    },
+    {
+      "id": "rosalina-and-luma",
+      "name": "Rosalina & Luma",
+      "series": "mario"
+    },
+    {
+      "id": "little-mac",
+      "name": "Little Mac",
+      "series": "punch-out"
+    },
+    {
+      "id": "greninja",
+      "name": "Greninja",
+      "series": "pokemon"
+    },
+    {
+      "id": "palutena",
+      "name": "Palutena",
+      "series": "kid-icarus"
+    },
+    {
+      "id": "pac-man",
+      "name": "Pac-Man",
+      "series": "pac-man"
+    },
+    {
+      "id": "robin",
+      "name": "Robin",
+      "series": "fire-emblem"
+    },
+    {
+      "id": "shulk",
+      "name": "Shulk",
+      "series": "xenoblade-chronicles"
+    },
+    {
+      "id": "bowser-jr",
+      "name": ["Bowser Jr.", "Larry", "Roy", "Wendy", "Iggy", "Morton", "Lemmy", "Ludwig"],
+      "series": "mario"
+    },
+    {
+      "id": "duck-hunt",
+      "name": "Duck Hunt",
+      "series": "duck-hunt"
+    },
+    {
+      "id": "ryu",
+      "name": "Ryu",
+      "series": "street-fighter"
+    },
+    {
+      "id": "ken",
+      "name": "Ken",
+      "series": "street-fighter"
+    },
+    {
+      "id": "cloud",
+      "name": "Cloud",
+      "series": "final-fantasy-vii"
+    },
+    {
+      "id": "corrin",
+      "name": "Corrin",
+      "series": "fire-emblem"
+    },
+    {
+      "id": "bayonetta",
+      "name": "Bayonetta",
+      "series": "bayonetta"
+    },
+    {
+      "id": "inkling",
+      "name": "Inkling",
+      "series": "splatoon"
+    },
+    {
+      "id": "ridley",
+      "name": "Ridley",
+      "series": "metroid"
+    },
+    {
+      "id": "simon",
+      "name": "Simon",
+      "series": "castlevania"
+    },
+    {
+      "id": "richter",
+      "name": "Richter",
+      "series": "castlevania"
+    },
+    {
+      "id": "king-k-rool",
+      "name": "King K. Rool",
+      "series": "donkey-kong"
+    },
+    {
+      "id": "isabelle",
+      "name": "Isabelle",
+      "series": "animal-crossing"
+    },
+    {
+      "id": "incineroar",
+      "name": "Incineroar",
+      "series": "pokemon"
+    },
+    {
+      "id": "piranha-plant",
+      "name": "Piranha Plant",
+      "series": "mario"
+    },
+    {
+      "id": "joker",
+      "name": "Joker",
+      "series": "persona"
+    },
+    {
+      "id": "hero",
+      "name": "Hero",
+      "series": "dragon-quest"
+    },
+    {
+      "id": "banjo-kazooie",
+      "name": "Banjo & Kazooie",
+      "series": "banjo-kazooie"
+    },
+    {
+      "id": "terry",
+      "name": "Fatal Fury",
+      "series": "fatal-fury"
+    },
+    {
+      "id": "random",
+      "name": "Random"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+export { ConfirmText } from './ConfirmText';
