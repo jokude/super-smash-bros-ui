@@ -13,6 +13,8 @@ $light-border-color: #fbbbd5;
   }
 }
 
+$animationConfig: borderHighlight 0.8s infinite linear;
+
 %animate {
-  animation: borderHighlight 0.8s infinite linear;
+  animation: $animationConfig;
 }
