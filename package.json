@@ -4,12 +4,12 @@
   "description": "Super Smash Bros UI",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config webpack/production.config.js",
+    "build": "npm run clean && webpack --config webpack/production.config.js",
     "clean": "rm -rf dist",
     "deploy": "node scripts/deploy-gh-pages.js",
     "lint": "eslint src/**/*.{ts,tsx}",
     "lint:fix": "npm run lint -- --fix",
-    "start": "npm run build && node src/server",
+    "start": "node src/server",
     "start:dev": "webpack-dev-server --config webpack/development.config.js",
     "analyze": "webpack --config webpack/analyzer.config.js"
   },
