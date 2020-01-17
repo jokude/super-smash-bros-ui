@@ -1,8 +1,10 @@
+import { getAsset } from '../assets';
+
 export class Sound {
   private audio: HTMLAudioElement;
 
   constructor(soundType: string, soundName: string) {
-    const path = `/assets/sounds/${soundType}/${soundName}.wav`;
+    const path = getAsset(`assets/sounds/${soundType}/${soundName}.wav`);
     this.audio = new Audio(path);
     this.audio.volume = 0.05;
   }

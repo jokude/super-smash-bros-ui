@@ -7,3 +7,4 @@ export {
   selectCharacterSound,
   cancelSelectCharacterSound
 } from './sounds';
+export { getAsset } from './assets';

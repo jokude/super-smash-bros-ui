@@ -1,0 +1,3 @@
+@function getAsset($path) {
+  @return #{$basePath}#{$path};
+}

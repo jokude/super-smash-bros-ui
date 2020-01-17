@@ -39,7 +39,7 @@ module.exports = {
               modules: true
             }
           },
-          { loader: 'sass-loader' }
+          { loader: 'sass-loader', options: { prependData: `$basePath: "${publicPath}";` } }
         ]
       },
       {

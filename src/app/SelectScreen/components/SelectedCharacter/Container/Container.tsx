@@ -2,8 +2,7 @@ import * as React from 'react';
 import SVG from 'react-inlinesvg';
 import cx from 'classnames';
 
-import background from '!svg-inline-loader?!../../../../../assets/images/characterBackground.svg';
-import { cursorSound } from '../../../helpers';
+import { cursorSound, getAsset } from '../../../helpers';
 import styles from './styles.scss';
 
 interface ContainerProps {
@@ -30,7 +29,7 @@ export const Container: React.FC<ContainerProps> = ({ children, isSelected, onCl
     onMouseEnter={isSelected ? onMouseEnter : undefined}
     className={cx(styles.container, { [styles.selected]: isSelected })}
   >
-    <SVG src={background} className={styles.background} />
+    <SVG src={getAsset('assets/images/characterBackground.svg')} className={styles.background} />
     {children}
   </div>
 );

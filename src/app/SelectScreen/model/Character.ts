@@ -1,4 +1,5 @@
 import { CharacterProperties, CharacterColor, CharacterImage } from './types';
+import { getAsset } from '../helpers/assets';
 
 export class Character {
   public id: string;
@@ -17,19 +18,19 @@ export class Character {
 
   getImage(type: CharacterImage, color: CharacterColor): string {
     if (this.isRandom()) {
-      return `/assets/images/random.png`;
+      return getAsset('assets/images/random.png');
     }
-    return `/assets/images/fighter-portraits/${this.id}/${type}_${color}.png`;
+    return getAsset(`assets/images/fighter-portraits/${this.id}/${type}_${color}.png`);
   }
 
   getSeriesIcon(): string {
-    return `/assets/images/series-icons/${this.series}.svg`;
+    return getAsset(`assets/images/series-icons/${this.series}.svg`);
   }
 
   getCharacterCall(color: CharacterColor = CharacterColor.Color1): string {
     const soundId =
       Array.isArray(this.name) && color !== CharacterColor.Color1 ? this.name[color].toLowerCase() : this.id;
-    return `/assets/sounds/character-call/${soundId}.wav`;
+    return getAsset(`assets/sounds/character-call/${soundId}.wav`);
   }
 
   isRandom(): boolean {

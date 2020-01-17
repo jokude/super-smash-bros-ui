@@ -1,4 +1,5 @@
 @import '../../../styles/border';
+@import '../../../styles/url';
 
 @keyframes backgroundSlide {
   from {
@@ -12,9 +13,11 @@
 .card {
   background-color: white;
   background-attachment: fixed;
-  background-image: url('/assets/images/background/stars.png'), url('/assets/images/background/clouds_yellow.png'),
-    url('/assets/images/background/clouds_blue_light.png'), url('/assets/images/background/clouds_blue_dark.png'),
-    url('/assets/images/background/clouds_violet.png');
+  background-image: url(getAsset('assets/images/background/stars.png')),
+    url(getAsset('assets/images/background/clouds_yellow.png')),
+    url(getAsset('assets/images/background/clouds_blue_light.png')),
+    url(getAsset('assets/images/background/clouds_blue_dark.png')),
+    url(getAsset('assets/images/background/clouds_violet.png'));
   background-repeat: repeat, repeat, repeat, repeat, repeat;
   animation: backgroundSlide 20s linear infinite;
 

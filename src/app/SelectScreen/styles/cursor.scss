@@ -1,15 +1,17 @@
+@import './url';
+
 %cursor-default {
-  cursor: url('/assets/images/cursor/default.png'), auto;
+  cursor: url(getAsset('assets/images/cursor/default.png')), auto;
 }
 
 %cursor-pointer {
-  cursor: url('/assets/images/cursor/pointer.png'), auto;
+  cursor: url(getAsset('assets/images/cursor/pointer.png')), auto;
 }
 
 %cursor-coin {
-  cursor: url('/assets/images/cursor/coin.png'), auto;
+  cursor: url(getAsset('assets/images/cursor/coin.png')), auto;
 }
 
 %cursor-grab {
-  cursor: url('/assets/images/cursor/grab.png'), auto;
+  cursor: url(getAsset('assets/images/cursor/grab.png')), auto;
 }
