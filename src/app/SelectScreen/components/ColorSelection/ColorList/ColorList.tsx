@@ -2,7 +2,7 @@ import * as React from 'react';
 import cx from 'classnames';
 
 import styles from './styles.scss';
-import { Character, CharacterColor, CharacterImage } from '../../../model';
+import { Character, CharacterColor } from '../../../model';
 
 export interface ColorListProps {
   character: Character;
@@ -10,22 +10,28 @@ export interface ColorListProps {
   onColorSelect: (color?: CharacterColor) => void;
 }
 
+const iconSize = styles.iconSize;
 const totalColors = 8;
 const colorIndex = [...Array(totalColors).keys()];
 
-export const ColorList: React.FC<ColorListProps> = ({ character, highlightedColor, onColorSelect }) => (
-  <div className={styles.container}>
-    {colorIndex.map(index => (
-      <img
-        alt={`${character.getName(index)} icon ${index}`}
-        className={cx(styles.icon, { [styles.highlighted]: highlightedColor === index })}
-        src={character.getImage(CharacterImage.ICON, index)}
-        onClick={() => onColorSelect(index)}
-        width="40px"
-        height="40px"
-        key={index}
-      />
-    ))}
-    <h3 className={styles.colorLabel}></h3>
-  </div>
-);
+const getIconFromSpritesheet = (color: CharacterColor, path: string): React.CSSProperties => ({
+  background: `url(${path}) -${(color % 3) * iconSize}px -${Math.floor(color / 3) * iconSize}px no-repeat`
+});
+
+export const ColorList: React.FC<ColorListProps> = ({ character, highlightedColor, onColorSelect }) => {
+  const iconsPath = character.getIcons();
+  return (
+    <div className={styles.container}>
+      {colorIndex.map(index => (
+        <div
+          className={cx(styles.iconBorder, { [styles.highlighted]: highlightedColor === index })}
+          onClick={() => onColorSelect(index)}
+          key={index}
+        >
+          <div className={cx(styles.icon)} style={getIconFromSpritesheet(index, iconsPath)} />
+        </div>
+      ))}
+      <h3 className={styles.colorLabel}></h3>
+    </div>
+  );
+};

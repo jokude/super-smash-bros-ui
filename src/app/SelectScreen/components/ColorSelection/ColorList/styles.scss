@@ -1,15 +1,26 @@
 @import '../../../styles/border';
 
+$iconSize: 40;
+
 .container {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
 
-  .icon {
+  .iconBorder {
     border: 4px solid transparent;
 
     &.highlighted {
       @extend %animate;
     }
   }
+
+  .icon {
+    height: #{$iconSize}px;
+    width: #{$iconSize}px;
+  }
+}
+
+:export {
+  iconSize: $iconSize;
 }

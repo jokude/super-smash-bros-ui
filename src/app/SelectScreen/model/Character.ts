@@ -23,6 +23,10 @@ export class Character {
     return getAsset(`assets/images/fighter-portraits/${this.id}/${type}_${color}.png`);
   }
 
+  getIcons(): string {
+    return getAsset(`assets/images/fighter-portraits/${this.id}/icons.png`);
+  }
+
   getSeriesIcon(): string {
     return getAsset(`assets/images/series-icons/${this.series}.svg`);
   }
