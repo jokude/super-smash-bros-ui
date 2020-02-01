@@ -34,7 +34,7 @@ export class Character {
   getCharacterCall(color: CharacterColor = CharacterColor.Color1): string {
     const soundId =
       Array.isArray(this.name) && color !== CharacterColor.Color1 ? this.name[color].toLowerCase() : this.id;
-    return getAsset(`assets/sounds/character-call/${soundId}.wav`);
+    return getAsset(`assets/sounds/character-call/${soundId}.mp3`);
   }
 
   isRandom(): boolean {
