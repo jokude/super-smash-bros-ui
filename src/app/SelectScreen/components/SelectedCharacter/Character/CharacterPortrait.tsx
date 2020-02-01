@@ -3,6 +3,7 @@ import cx from 'classnames';
 
 import styles from './styles.scss';
 import { Character, CharacterColor, CharacterImage } from '../../../model';
+import { Picture } from '../../Picture';
 
 export interface CharacterPortraitProps {
   character?: Character;
@@ -19,7 +20,7 @@ export const CharacterPortrait: React.FC<CharacterPortraitProps> = ({ character,
     <div className={cx(styles.container, { [styles.selected]: isSelected })}>
       <h2 className={cx(styles.title, { [styles.large]: name.length <= 12 })}>{name}</h2>
       <div className={slideClass}>
-        <img
+        <Picture
           alt={`${name} small portrait`}
           className={cx(styles.portrait, { [styles.selected]: isSelected })}
           src={portrait}
@@ -27,7 +28,7 @@ export const CharacterPortrait: React.FC<CharacterPortraitProps> = ({ character,
           height={isRandom ? '200px' : 'auto'}
         />
         {isSelected && !isRandom && (
-          <img
+          <Picture
             alt={`${name} small portrait shadow`}
             className={styles.portraitShadow}
             src={portrait}

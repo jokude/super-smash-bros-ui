@@ -18,9 +18,9 @@ export class Character {
 
   getImage(type: CharacterImage, color: CharacterColor): string {
     if (this.isRandom()) {
-      return getAsset('assets/images/random.png');
+      return getAsset('assets/images/random');
     }
-    return getAsset(`assets/images/fighter-portraits/${this.id}/${type}_${color}.png`);
+    return getAsset(`assets/images/fighter-portraits/${this.id}/${type}_${color}`);
   }
 
   getIcons(): string {

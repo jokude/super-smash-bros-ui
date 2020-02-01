@@ -4,6 +4,7 @@ import cx from 'classnames';
 import styles from './styles.scss';
 import { Character, CharacterImage } from '../../../model';
 import { cursorSound, selectCharacterSound } from '../../../helpers';
+import { Picture } from '../../Picture';
 
 export interface CharacterProps {
   character: Character;
@@ -47,7 +48,7 @@ export const CharacterCard: React.FC<CharacterProps> = ({ character, onHightligh
       onMouseEnter={onMouseEnter(() => onHightlight(character))}
       onMouseLeave={onMouseLeave(() => onHightlight())}
     >
-      <img
+      <Picture
         alt={`${charName} half portrait`}
         className={cx({ [styles.cardPortrait]: !isRandom, [styles.cardPortraitRandom]: isRandom })}
         src={character.getImage(CharacterImage.HALF, 0)}
