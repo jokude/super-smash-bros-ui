@@ -395,6 +395,11 @@
       "series": "fatal-fury"
     },
     {
+      "id": "byleth",
+      "name": "Byleth",
+      "series": "fire-emblem"
+    },
+    {
       "id": "random",
       "name": "Random"
     }

@@ -20,5 +20,5 @@ $totalColumns: 13;
 }
 
 .grid > :nth-child(13n + 1):nth-last-child(-n + 13) {
-  grid-column-start: 2;
+  grid-column-start: 1;
 }
