@@ -6,35 +6,16 @@
     <% } %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-      @font-face {
-        font-family: FOT-RodinHimawariPro-UB;
-        src: url('<%= webpackConfig.output.publicPath %>assets/fonts/FOT-RodinHimawariPro-UB.woff2') format('woff2'),
-          url('<%= webpackConfig.output.publicPath %>assets/fonts/FOT-RodinHimawariPro-UB.woff') format('woff'),
-          url('<%= webpackConfig.output.publicPath %>assets/fonts/FOT-RodinHimawariPro-UB.ttf') format('truetype');
-      }
-
-      html,
-      body,
-      #app {
-        margin: 0;
-        height: 100%;
-        width: 100%;
-      }
-      #app {
-        display: flex;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-      }
-      .wf-loading {
-        opacity: 0;
-      }
+      <% if(compilation.assets['base.css']) { %>
+        <%= compilation.assets['base.css']._value %>
+      <% } %>
     </style>
     <meta charset="UTF-8" />
     <meta name="description" content="Super Smash Bros Selection Screen" />
     <title>Super Smash Bros Selection Screen</title>
-    <% if(webpackConfig.output.publicPath) { %>
     <link rel="icon" href="<%= webpackConfig.output.publicPath %>assets/images/favicon.ico" />
+    <% if(webpackConfig.mode === "production") { %>
+    <link rel="stylesheet" type="text/css" href="<%= webpackConfig.output.publicPath %>index.css" />
     <% } %>
   </head>
   <body>
