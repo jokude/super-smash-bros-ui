@@ -1,0 +1,24 @@
+@import '../styles/url';
+
+@font-face {
+  font-family: FOT-RodinHimawariPro-UB;
+  src: url(getAsset('assets/fonts/FOT-RodinHimawariPro-UB.woff2')) format('woff2'),
+    url(getAsset('assets/fonts/FOT-RodinHimawariPro-UB.woff')) format('woff'),
+    url(getAsset('assets/fonts/FOT-RodinHimawariPro-UB.ttf')) format('truetype');
+}
+
+body,
+#app {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+#app {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.wf-loading {
+  opacity: 0;
+}
