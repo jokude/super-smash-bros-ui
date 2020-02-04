@@ -32,3 +32,5 @@ export const CharacterGrid: React.FC<CharacterGridProps> = ({
     ))}
   </div>
 );
+
+CharacterGrid.displayName = 'CharacterGrid';

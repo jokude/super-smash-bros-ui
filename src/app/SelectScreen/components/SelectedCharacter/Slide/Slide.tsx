@@ -18,3 +18,5 @@ export const Slide: React.FC<SlideProps> = ({ children, childKey }) => (
     </Transition>
   </TransitionGroup>
 );
+
+Slide.displayName = 'Slide';

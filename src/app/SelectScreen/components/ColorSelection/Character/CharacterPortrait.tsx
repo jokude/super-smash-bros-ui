@@ -18,3 +18,5 @@ export const CharacterPortrait: React.FC<CharacterPortraitProps> = ({ character,
     </div>
   );
 };
+
+CharacterPortrait.displayName = 'CharacterPortrait';

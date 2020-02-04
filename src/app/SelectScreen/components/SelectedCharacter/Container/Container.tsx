@@ -33,3 +33,5 @@ export const Container: React.FC<ContainerProps> = ({ children, isSelected, onCl
     {children}
   </div>
 );
+
+Container.displayName = 'SelectedCharacterContainer';

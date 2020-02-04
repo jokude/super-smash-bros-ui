@@ -11,3 +11,5 @@ export const Title: React.FC<TitleProps> = ({ title }) => (
     <h1 className={styles.title}>{title}</h1>
   </div>
 );
+
+Title.displayName = 'Title';

@@ -19,3 +19,5 @@ export const ConfirmText: React.FC<ConfirmTextProps> = ({ status }) => (
     />
   </div>
 );
+
+ConfirmText.displayName = 'ConfirmText';

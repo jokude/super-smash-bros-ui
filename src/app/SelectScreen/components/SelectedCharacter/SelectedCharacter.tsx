@@ -36,3 +36,5 @@ export const SelectedCharacter: React.FC<SelectedCharacterProps> = ({
     </Container>
   );
 };
+
+SelectedCharacter.displayName = 'SelectedCharacter';

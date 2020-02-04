@@ -10,3 +10,5 @@ export interface ColorLabelProps {
 export const ColorLabel: React.FC<ColorLabelProps> = ({ color }) => (
   <h3 className={styles.colorLabel}>{`Color ${color}`}</h3>
 );
+
+ColorLabel.displayName = 'ColorLabel';

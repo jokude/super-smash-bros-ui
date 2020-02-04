@@ -8,3 +8,5 @@ export const Background: React.FC = () => (
     <Canvas width={1280} height={300} />
   </div>
 );
+
+Background.displayName = 'Background';

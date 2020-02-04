@@ -17,3 +17,5 @@ export const SelectedContainer: React.FC = ({ children }) => (
     </div>
   </div>
 );
+
+SelectedContainer.displayName = 'SelectedContainer';

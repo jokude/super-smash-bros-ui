@@ -6,3 +6,5 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 export const App: React.FC = () => <SelectScreen />;
+
+App.displayName = 'MainApp';

@@ -63,3 +63,5 @@ export const SelectScreen: React.FC = () => {
     </div>
   );
 };
+
+SelectScreen.displayName = 'SelectScreen';

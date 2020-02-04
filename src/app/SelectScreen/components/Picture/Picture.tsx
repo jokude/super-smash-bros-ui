@@ -7,3 +7,5 @@ export const Picture: React.FC<React.ImgHTMLAttributes<HTMLImageElement>> = ({ s
     <img src={`${src}.png`} {...restProps} />
   </picture>
 );
+
+Picture.displayName = 'Picture';

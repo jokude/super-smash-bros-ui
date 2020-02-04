@@ -59,3 +59,5 @@ export const CharacterCard: React.FC<CharacterProps> = ({ character, onHightligh
     </div>
   );
 };
+
+CharacterCard.displayName = 'CharacterCard';

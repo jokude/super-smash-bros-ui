@@ -35,3 +35,5 @@ export const ColorList: React.FC<ColorListProps> = ({ character, highlightedColo
     </div>
   );
 };
+
+ColorList.displayName = 'ColorList';

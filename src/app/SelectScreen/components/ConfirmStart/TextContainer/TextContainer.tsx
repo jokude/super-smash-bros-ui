@@ -15,3 +15,5 @@ export const TextContainer: React.FC<TextContainerProps> = ({ children, active }
     {children}
   </div>
 );
+
+TextContainer.displayName = 'TextContainer';

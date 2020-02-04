@@ -19,3 +19,5 @@ export const Canvas: React.FC<CanvasProps> = ({ width, height }) => {
   React.useEffect(animateEffect(canvasRef), [canvasRef]);
   return <canvas ref={canvasRef} className={styles.canvas} width={width} height={height} />;
 };
+
+Canvas.displayName = 'SelectedContainerCanvas';

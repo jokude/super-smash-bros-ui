@@ -58,3 +58,5 @@ export const ColorSelection: React.FC<ColorSelectionProps> = ({ character, initi
     </div>
   );
 };
+
+ColorSelection.displayName = 'ColorSelection';

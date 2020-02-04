@@ -41,3 +41,5 @@ export const ConfirmStart: React.FC<ConfirmStartProps> = ({ active, onEscape }) 
     </Transition>
   );
 };
+
+ConfirmStart.displayName = 'ConfirmStart';

@@ -29,3 +29,5 @@ export const Canvas: React.FC<CanvasProps> = ({ width, height, enabled }) => {
   React.useEffect(animateEffect(canvasRef, enabled), [enabled, canvasRef]);
   return <canvas ref={canvasRef} className={styles.canvas} width={width} height={height} />;
 };
+
+Canvas.displayName = 'ConfirmStartCanvas';
