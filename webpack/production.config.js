@@ -76,6 +76,13 @@ module.exports = merge(common, {
     })
   ],
   optimization: {
-    minimizer: [new TerserWebpackPlugin(), new OptimizeCSSAssetsPlugin({})]
+    minimizer: [
+      new TerserWebpackPlugin(),
+      new OptimizeCSSAssetsPlugin({
+        cssProcessorPluginOptions: {
+          preset: ['default', { mergeLonghand: false }]
+        }
+      })
+    ]
   }
 });
